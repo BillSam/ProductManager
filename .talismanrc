@@ -19,3 +19,8 @@ fileignoreconfig:
   checksum: 70ea0fc90698fac574b063c55631998a43b18d869c02e82fb36dcf1203650f2e
 version: ""
 
+fileignoreconfig:
+- filename: .github/workflows/combined.yml
+  checksum: a25d95a2c0782e12974c9785b7aa95719b1a256c109bf12ca2ffd893301c443e
+version: ""
+
