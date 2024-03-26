@@ -1,0 +1,10 @@
+fileignoreconfig:
+- filename: .github/workflows/owaspDependency.yml
+  checksum: 32015f154a24d590ad7f8fde89778cd7b7700214a50ce5e1b1e06bee21a1c3e1
+version: ""
+
+fileignoreconfig:
+- filename: .github/workflows/sonarcloud.yml
+  checksum: cb1b8c2cd915c78238fd18f492180c9a6545874ff95ef331b4229724df89a50d
+version: ""
+
