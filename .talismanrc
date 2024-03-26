@@ -8,3 +8,8 @@ fileignoreconfig:
   checksum: cb1b8c2cd915c78238fd18f492180c9a6545874ff95ef331b4229724df89a50d
 version: ""
 
+fileignoreconfig:
+- filename: .github/workflows/sonarcloud.yml
+  checksum: 97d91e007a3f368536250e0ce1aae06760e3957d33175c065713753cdb1d20a2
+version: ""
+
