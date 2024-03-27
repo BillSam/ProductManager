@@ -1,4 +1,4 @@
-name: build
+name: trivy scan
 
 on:
   push:
@@ -17,5 +17,14 @@ jobs:
       uses: aquasecurity/trivy-action@master
       with:
         scan-type: 'fs'
+        format: 'table'
         scan-ref: '.'
-        trivy-config: trivy.yaml
+        vuln-type: 'os,library'
+        severity: 'CRITICAL,HIGH'
+        output: 'trivy-results.json'
+
+    - name: update report
+      uses: actions/upload-artifact@v2
+      with:
+        name: trivy-report
+        path: trivy-results.json
