@@ -11,8 +11,8 @@ public class UserService {
     }
 
     public void deleteUser(String userId) {
-        String sql = "DELETE FROM users WHERE id = '" + userId + "'";
-        jdbcTemplate.execute(sql);
+        String sql = "DELETE FROM users WHERE id = ?";
+        jdbcTemplate.update(sql, userId);
     }
 
 //    String sql = "DELETE FROM users WHERE id = ?";
